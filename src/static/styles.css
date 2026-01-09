@@ -142,3 +142,73 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants section inside activity cards */
+.activity-card .participants {
+  margin-top: 14px;
+  padding: 14px;
+  border: 1px dashed #cfd8dc;
+  background: linear-gradient(180deg, #fafbff 0%, #f5f7ff 100%);
+  border-radius: 6px;
+}
+
+.activity-card .participants h5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 0.98rem;
+  color: #1a237e;
+  letter-spacing: 0.2px;
+}
+
+.activity-card .participants h5::before {
+  content: "👥";
+  font-size: 1rem;
+}
+
+.activity-card .participants .participants-count {
+  background-color: #1a237e;
+  color: #fff;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+
+.activity-card .participants .participants-list {
+  list-style: disc;
+  padding-left: 1.25rem; /* reset from global * { padding: 0 } */
+  margin: 0;
+}
+
+.activity-card .participants .participants-list li {
+  color: #333;
+  margin: 6px 0;
+}
+
+.activity-card .participants .participants-list li + li {
+  margin-top: 8px;
+}
+
+.activity-card .participants .empty {
+  color: #666;
+  font-style: italic;
+}
+
+/* Optional: tiny circular initials if you include them inside <li> */
+.activity-card .participants .avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #e8eaf6;
+  color: #1a237e;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.72rem;
+  border: 1px solid #c5cae9;
+  margin-right: 8px;
+  vertical-align: -3px;
+}
