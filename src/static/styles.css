@@ -167,13 +167,13 @@ footer {
   font-size: 1rem;
 }
 
-.activity-card .participants .participants-count {
-  background-color: #1a237e;
-  color: #fff;
-  border-radius: 999px;
-  padding: 2px 8px;
-  font-size: 0.75rem;
-  line-height: 1.2;
+.activity-card .participants .participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.participants-list {
+  list-style-type: none;
 }
 
 .activity-card .participants .participants-list {
@@ -187,6 +187,9 @@ footer {
   margin: 6px 0;
 }
 
+.participants-list {
+  list-style-type: none;
+}
 .activity-card .participants .participants-list li + li {
   margin-top: 8px;
 }
